@@ -1,8 +1,141 @@
+/* * {
+    transition: 1s;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: none;
+    /* margin: 0; */
+    font-size: 18px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.right_side {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-content: center;
+    background-color: hsl(0, 0%, 100%);
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px 50px;
+    max-width: 50%;
+    padding: 10px;
+}
+
+label {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+    align-self: center;
+    padding: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 85%;
+}
+
+form>button {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(278, 68%, 11%);
+    border: 1px solid hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 93%;
+}
+
+input ::placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(279, 6%, 55%);
+}
+
+input ::-moz-placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(279, 6%, 55%);
+}
+
+.grouped {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.exp_dates>div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.exp_dates>div>input {
+    margin-top: 10px;
+    width: 50%;
+}
+
+.cvc {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.cvc>input {
+    max-width: 75%;
+}
+
+
+/* .exp_dates {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+} */
+
+/* .on_top {
+    position: absolute;
+}
+
+.card_front{
+    width: 100%;
+    background-image: url("./images/bg-card-front.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card_back{
+    width: 100%;
+    background-image: url("./images/bg-card-back.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228,45%,44%);
+    color: hsl(228, 45%, 44%);
 }
