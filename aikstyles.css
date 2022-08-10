@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
-/* * {
+* {
     transition: 1s;
-    border: 1px solid red;
-} */
+    /* border: 1px solid red; */
+}
 
 body {
     box-sizing: border-box;
     overflow-y: scroll;
     overflow-x: none;
-    /* margin: 0; */
+    margin: 0;
     font-size: 18px
 }
 
 .container {
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 250px;
+    grid-column-gap: 300px;
+    height: 92%;
+    margin-bottom: 0;
 }
 
 .container>img {
+    height: inherit;
     pointer-events: none;
+    margin-bottom: 0;
 }
 
 .right_side {
@@ -28,20 +32,23 @@ body {
     grid-template-columns: auto;
     grid-template-rows: auto;
     align-content: center;
+    justify-content: center;
     background-color: hsl(0, 0%, 100%);
     width: inherit;
     height: inherit;
     padding: 10px;
+    max-width: 100%;
+    margin-bottom: 0;
 }
 
 form {
     display: grid;
-    justify-content: center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px 50px;
-    max-width: 70%;
+    max-width: 65%;
     padding: 10px;
+    margin-top: -150px;
 }
 
 label {
@@ -49,7 +56,8 @@ label {
     color: hsl(278, 68%, 11%);
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
+    margin-bottom: -5px;
 }
 
 input {
@@ -70,6 +78,7 @@ form>button {
     padding: 10px;
     border-radius: 5px;
     max-width: 93%;
+    margin-top: 20px;
 }
 
 input ::placeholder {
@@ -96,8 +105,9 @@ input ::-moz-placeholder {
     grid-template-columns: auto auto;
 }
 
+
 .exp_dates>div>input {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 50%;
 }
 
@@ -108,41 +118,49 @@ input ::-moz-placeholder {
 
 .cvc>input {
     max-width: 75%;
+    margin-top: 10px;
 }
 
-/* 
+
 .on_top {
+    left: 12%;
+    top: 20%;
+    width: fit-content;
+    height: 30%;
     position: absolute;
-} */
+}
 
 .card_front{
     display: grid;
     grid-template-rows: auto auto;
     align-content: space-between;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 28px;
+    padding-right: 10px;
     width: 100%;
     background-image: url("./images/bg-card-front.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 90%;
     color: hsl(0, 0%, 100%);
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 30px;
 }
 .card_front>div>p{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 200;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
     margin-bottom: 10px;
 }
 .card_front>div>div {
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 200px;
-    font-size: 12px;
+    grid-column-gap: 150px;
+    font-size: 11px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -154,19 +172,24 @@ input ::-moz-placeholder {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
-    width: 100%;
+    width: 105%;
     height: 100%;
+    margin-left: 75px;
 }
 
 .card_back>p {
-    margin-left: 450%;
+    letter-spacing: 2px;
+    margin-left: 330%;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .attribution {
-    font-size: 11px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
     text-align: center;
+    margin-top: -15px;
+    margin-bottom: 20px;
 }
 
 .attribution a {
