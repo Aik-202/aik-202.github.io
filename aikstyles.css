@@ -64,6 +64,7 @@ label {
 }
 
 .input_div1>p {
+    display: none;
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(0, 100%, 66%);
     font-size: 13px;
@@ -77,6 +78,7 @@ label {
 }
 
 .input_div2>p {
+    display: none;
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(0, 100%, 66%);
     font-size: 9.6px;
@@ -91,6 +93,7 @@ label {
 }
 
 .input_div3>p {
+    display: none;
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(0, 100%, 66%);
     font-size: 13px;
@@ -349,6 +352,10 @@ input ::-moz-placeholder {
     .form {
         max-width: 80%;
         margin-top: -50px;
+    }
+
+    .input_div2>p{
+        font-size: 9.2px;
     }
 
     .card_front {
