@@ -81,11 +81,11 @@ label {
     display: none;
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(0, 100%, 66%);
-    font-size: 9.6px;
+    font-size: 10px;
     margin-top: 2px;
-    width: 100%;
-    max-width: 100%;
+    width: 6%;
     font-weight: 500;
+    position: fixed;
 }
 
 .input_div3 {
