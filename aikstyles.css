@@ -262,7 +262,7 @@ input ::-moz-placeholder {
 }
 
 .container2 {
-    display: grid;
+    display: none;
     grid-template-columns: auto auto;
     height: 92%;
     margin-bottom: 0;
