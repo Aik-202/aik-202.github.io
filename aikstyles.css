@@ -130,15 +130,19 @@ input ::-moz-placeholder {
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(279, 6%, 55%);
 }
+form>a {
+    max-width: 99%; 
+}
 
-form>button {
+form>a>button {
     font-family: 'Space Grotesk', sans-serif;
     background-color: hsl(278, 68%, 11%);
     border: 1px solid hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     padding: 10px;
     border-radius: 5px;
-    max-width: 99%;
+    width: 100%;
+    max-width: inherit;
     margin-top: 10px;
 }
 
@@ -252,6 +256,81 @@ form>button {
     color: hsl(228, 45%, 44%);
 }
 
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 92%;
+    margin-bottom: 0;
+}
+
+.container2>img {
+    height: inherit;
+    pointer-events: none;
+    margin-bottom: 0;
+}
+
+.right_side2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-left: -120px;
+}
+
+.right_side2 > div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: -200px;
+}
+
+.right_side2 > div > svg {
+   margin-left: 120px;
+}
+
+.right_side2>div>h2 {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(278, 68%, 11%);
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 25px;
+}
+
+.right_side2>div>p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(279, 6%, 55%);
+    margin-top: -10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.right_side2>div>button {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(278, 68%, 11%);
+    border: 1px solid hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
 /* for mobile desktop site mode */
 @media only screen and (max-width: 1200px){
     .container {
@@ -291,6 +370,19 @@ form>button {
 
     .attribution {
         margin-top: 10px;
+    }
+
+    .container2>img {
+        width: 73%;
+        height: 100%;
+    } 
+
+    .right_side2 {
+        margin-left: 10px;
+    }
+
+    .right_side2 > div {
+        margin-top: -5px;
     }
 }
 
@@ -398,5 +490,26 @@ form>button {
     .attribution {
         margin-top: -30px;
         font-size: 10px;
+    }
+
+    .container2{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0;
+    }
+
+    .container2>img {
+        width: 100%;
+        height: 36%;
+    }
+
+    .right_side2 {
+        margin-top: -250px;
+        margin-left: -20px;
+    }
+
+    .right_side2>div>p {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
