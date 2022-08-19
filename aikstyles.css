@@ -40,7 +40,7 @@ body {
     margin-bottom: 0;
 }
 
-form {
+.form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -60,7 +60,7 @@ label {
 }
 
 .input_div1 {
-    width: 95%;  
+    width: 95%;
 }
 
 .input_div1>p {
@@ -73,7 +73,7 @@ label {
 }
 
 .input_div2 {
-    width: 80%;  
+    width: 80%;
 }
 
 .input_div2>p {
@@ -87,7 +87,7 @@ label {
 }
 
 .input_div3 {
-    width: 90%;  
+    width: 90%;
 }
 
 .input_div3>p {
@@ -99,8 +99,6 @@ label {
     font-weight: 500;
 }
 
-
-
 input {
     font-family: 'Space Grotesk', sans-serif;
     align-self: center;
@@ -109,16 +107,16 @@ input {
     border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 0;
-    width: inherit; 
+    width: inherit;
 }
 
-.input_div1>input{
+.input_div1>input {
     width: inherit;
 }
 
 input:focus {
-    border: 1px solid hsl(249, 99%, 64%) ;
-    outline:  1px solid hsl(249, 99%, 64%) ;
+    border: 1px solid hsl(249, 99%, 64%);
+    outline: 1px solid hsl(249, 99%, 64%);
 }
 
 input ::placeholder {
@@ -130,11 +128,12 @@ input ::-moz-placeholder {
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(279, 6%, 55%);
 }
-form>a {
-    max-width: 99%; 
+
+.form>a {
+    max-width: 99%;
 }
 
-form>a>button {
+.form>a>button {
     font-family: 'Space Grotesk', sans-serif;
     background-color: hsl(278, 68%, 11%);
     border: 1px solid hsl(278, 68%, 11%);
@@ -144,6 +143,7 @@ form>a>button {
     width: 100%;
     max-width: inherit;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .grouped {
@@ -189,7 +189,7 @@ form>a>button {
     position: absolute;
 }
 
-.card_front{
+.card_front {
     grid-row: 1/1;
     display: grid;
     grid-template-rows: auto auto;
@@ -208,12 +208,14 @@ form>a>button {
     font-family: 'Space Grotesk', sans-serif;
     margin-bottom: 30px;
 }
-.card_front>div>p{
+
+.card_front>div>p {
     font-size: 22px;
     font-weight: 200;
     letter-spacing: 0.3rem;
     margin-bottom: 10px;
 }
+
 .card_front>div>div {
     display: grid;
     grid-template-columns: auto auto;
@@ -223,7 +225,7 @@ form>a>button {
     text-transform: uppercase;
 }
 
-.card_back{
+.card_back {
     grid-row: 2/2;
     display: grid;
     justify-content: center;
@@ -284,7 +286,7 @@ form>a>button {
     margin-left: -120px;
 }
 
-.right_side2 > div {
+.right_side2>div {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -295,8 +297,8 @@ form>a>button {
     margin-top: -200px;
 }
 
-.right_side2 > div > svg {
-   margin-left: 120px;
+.right_side2>div>svg {
+    margin-left: 120px;
 }
 
 .right_side2>div>h2 {
@@ -330,9 +332,11 @@ form>a>button {
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
+    cursor: pointer;
 }
+
 /* for mobile desktop site mode */
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
     .container {
         grid-column-gap: 350px;
     }
@@ -342,7 +346,7 @@ form>a>button {
         height: 100%;
     }
 
-    form {
+    .form {
         max-width: 80%;
         margin-top: -50px;
     }
@@ -375,20 +379,20 @@ form>a>button {
     .container2>img {
         width: 73%;
         height: 100%;
-    } 
+    }
 
     .right_side2 {
         margin-left: 10px;
     }
 
-    .right_side2 > div {
+    .right_side2>div {
         margin-top: -5px;
     }
 }
 
 /* for mobile normal screen */
 @media only screen and (max-width: 400px) {
-    .container{
+    .container {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         grid-column-gap: 0;
@@ -406,7 +410,7 @@ form>a>button {
         font-size: 13px;
     }
 
-    form {
+    .form {
         justify-content: start;
         align-content: start;
         max-width: 90%;
@@ -416,12 +420,12 @@ form>a>button {
         font-size: 13px;
     }
 
-    input{
+    input {
         max-width: 100%;
         font-size: 13px;
     }
 
-    form > button {
+    .form>button {
         max-width: 100%;
         font-size: 15px;
     }
@@ -459,7 +463,7 @@ form>a>button {
         margin-left: 15px;
     }
 
-    .card_front>div>p{
+    .card_front>div>p {
         font-size: 17px;
         letter-spacing: 0.13rem;
     }
@@ -483,7 +487,7 @@ form>a>button {
         margin-left: 180px;
     }
 
-    .card_front::before .card_back{
+    .card_front::before .card_back {
         display: block;
     }
 
@@ -492,7 +496,7 @@ form>a>button {
         font-size: 10px;
     }
 
-    .container2{
+    .container2 {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         grid-column-gap: 0;
