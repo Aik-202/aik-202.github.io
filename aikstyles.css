@@ -141,7 +141,6 @@ input ::-moz-placeholder {
     padding-top: 20px;
     padding-left: 28px;
     padding-right: 10px;
-    width: 100%;
     background-image: url("./images/bg-card-front.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -201,6 +200,53 @@ input ::-moz-placeholder {
     color: hsl(228, 45%, 44%);
 }
 
+/* for mobile desktop site mode */
+@media only screen and (max-width: 1200px){
+    .container {
+        grid-column-gap: 380px;
+    }
+
+    .container>img {
+        width: 200%;
+        height: 100%;
+    }
+
+    form {
+        max-width: 75%;
+        margin-top: -50px;
+    }
+
+    .on_top {
+        top: 10%;
+    }
+
+    .card_front {
+        width: 90%;
+    }
+
+    .card_front>div>p {
+        font-size: 18px;
+        letter-spacing: 0.2rem;
+    }
+
+    .card_front>div>div {
+        font-size: 9px;
+    }
+
+    .card_back {
+        width: 100%;
+    }
+
+    .card_back>p {
+        margin-left: 230%;
+    }
+
+    .attribution {
+        margin-top: 10px;
+    }
+}
+
+/* for mobile normal screen */
 @media only screen and (max-width: 400px) {
     .container{
         grid-template-columns: auto;
