@@ -2,7 +2,6 @@
 
 * {
     transition: 1s;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -48,7 +47,7 @@ form {
     grid-gap: 10px 50px;
     max-width: 65%;
     padding: 10px;
-    margin-top: -150px;
+    margin-top: -160px;
 }
 
 label {
@@ -60,6 +59,48 @@ label {
     margin-bottom: -5px;
 }
 
+.input_div1 {
+    width: 95%;  
+}
+
+.input_div1>p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(0, 100%, 66%);
+    font-size: 13px;
+    margin-top: -2px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.input_div2 {
+    width: 80%;  
+}
+
+.input_div2>p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(0, 100%, 66%);
+    font-size: 9.6px;
+    margin-top: 2px;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 500;
+}
+
+.input_div3 {
+    width: 90%;  
+}
+
+.input_div3>p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(0, 100%, 66%);
+    font-size: 13px;
+    margin-top: -2px;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+
 input {
     font-family: 'Space Grotesk', sans-serif;
     align-self: center;
@@ -67,18 +108,17 @@ input {
     border: 1px solid hsl(270, 3%, 87%);
     border-radius: 5px;
     margin-bottom: 10px;
-    max-width: 85%;
+    margin-right: 0;
+    width: inherit; 
 }
 
-form>button {
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: hsl(278, 68%, 11%);
-    border: 1px solid hsl(278, 68%, 11%);
-    color: hsl(0, 0%, 100%);
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 93%;
-    margin-top: 20px;
+.input_div1>input{
+    width: inherit;
+}
+
+input:focus {
+    border: 1px solid hsl(249, 99%, 64%) ;
+    outline:  1px solid hsl(249, 99%, 64%) ;
 }
 
 input ::placeholder {
@@ -89,6 +129,17 @@ input ::placeholder {
 input ::-moz-placeholder {
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(279, 6%, 55%);
+}
+
+form>button {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(278, 68%, 11%);
+    border: 1px solid hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 99%;
+    margin-top: 10px;
 }
 
 .grouped {
@@ -103,21 +154,22 @@ input ::-moz-placeholder {
 .exp_dates>div {
     display: grid;
     grid-template-columns: auto auto;
+    grid-column-gap: 0;
 }
 
-
-.exp_dates>div>input {
+.exp_dates>div>div>input {
     margin-top: 5px;
-    width: 50%;
+    width: inherit;
 }
 
 .cvc {
     display: grid;
     grid-template-rows: auto auto;
+    margin-left: 10px;
 }
 
-.cvc>input {
-    max-width: 75%;
+.cvc>div>input {
+    width: inherit;
     margin-top: 10px;
 }
 
@@ -203,21 +255,17 @@ input ::-moz-placeholder {
 /* for mobile desktop site mode */
 @media only screen and (max-width: 1200px){
     .container {
-        grid-column-gap: 380px;
+        grid-column-gap: 350px;
     }
 
     .container>img {
-        width: 200%;
+        width: 150%;
         height: 100%;
     }
 
     form {
-        max-width: 75%;
+        max-width: 80%;
         margin-top: -50px;
-    }
-
-    .on_top {
-        top: 10%;
     }
 
     .card_front {
