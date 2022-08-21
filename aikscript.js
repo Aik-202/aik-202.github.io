@@ -51,8 +51,8 @@ for (let i = 0; i < inputFields.length; i++) {
                 if (i === 1) {
                     userInfo.cardNumber = inputFields[i].value;
                     if (inputFields[i].value.length === 4 || inputFields[i].value.length === 9 || inputFields[i].value.length === 14) {
-                        inputFields[i].value = inputFields[i].value + " ";
-                    }
+                        inputFields[i].value = inputFields[i].value + " ";   
+                    } 
                 } else if (i === 2) {
                     month = inputFields[i].value
                     if (inputFields[i].value > 12 || inputFields[i].value < 1) {
@@ -122,8 +122,20 @@ const submit = () => {
         }
     }
     if (!test.includes(true)) {
+        for (let i = 0; i < inputFields.length; i++) {
+            inputFields[i].value = "";
+            if(i == 0){
+                inputFields[i].placeholder = "e.g. Jane Appleseed"
+            } else if(i == 2){
+                inputFields[i].placeholder = "e.g. 1234 5678 9123 0000"
+            } else if(i == 2){
+                inputFields[i].placeholder = "MM"
+            } else if(i == 3){
+                inputFields[i].placeholder = "YY"
+            } else if(i == 4){
+                inputFields[i].placeholder = "e.g. 123"
+            }
+        }
         button.setAttribute("href","completed.html");
-        // container1.style.display = "none";
-        // container2.style.display = "grid";
     }
 }
