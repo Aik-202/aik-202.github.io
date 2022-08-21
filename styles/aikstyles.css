@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
+/* for desktop mode */
 * {
     transition: 1s;
 }
@@ -67,7 +68,7 @@ label {
     text-transform: capitalize;
 }
 
-.inp>input::placeholder{
+.inp>input::placeholder {
     text-transform: none;
 }
 
@@ -208,7 +209,7 @@ input ::-moz-placeholder {
     padding-top: 20px;
     padding-left: 28px;
     padding-right: 10px;
-    background-image: url("./images/bg-card-front.png");
+    background-image: url("../images/bg-card-front.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -250,7 +251,7 @@ input ::-moz-placeholder {
     display: grid;
     justify-content: center;
     align-content: center;
-    background-image: url("./images/bg-card-back.png");
+    background-image: url("../images/bg-card-back.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -355,6 +356,8 @@ input ::-moz-placeholder {
     cursor: pointer;
 }
 
+/* end of desktop mode */
+
 /* for mobile desktop site mode */
 @media only screen and (max-width: 1200px) {
     .container {
@@ -365,7 +368,7 @@ input ::-moz-placeholder {
         width: 150%;
         height: 100%;
     }
-    
+
     .on_top {
         left: 15%;
         top: 6%;
@@ -378,7 +381,7 @@ input ::-moz-placeholder {
         margin-top: -50px;
     }
 
-    .input_div2>p{
+    .input_div2>p {
         font-size: 9.2px;
     }
 
@@ -426,6 +429,8 @@ input ::-moz-placeholder {
     }
 }
 
+/* end of mobile desktop site mode */
+
 /* for mobile normal screen */
 @media only screen and (max-width: 400px) {
     .container {
@@ -463,9 +468,9 @@ input ::-moz-placeholder {
         max-width: 100%;
         font-size: 13px;
     }
-    
+
     .form>a {
-      max-width: 150%;
+        max-width: 150%;
     }
 
     .form>a>button {
@@ -481,19 +486,20 @@ input ::-moz-placeholder {
     .cvc {
         margin-right: -30px;
     }
-    
+
     .input_div1 {
-    width: 98%;
-}
-    .input_div2>p{
+        width: 98%;
+    }
+
+    .input_div2>p {
         font-size: 9.2px;
         width: 100%;
         position: static;
     }
 
- .input_div3 {
-    width: 85%;
-  }
+    .input_div3 {
+        width: 85%;
+    }
 
     .on_top {
         left: 2%;
@@ -509,6 +515,7 @@ input ::-moz-placeholder {
     #ellipse1 {
         display: none;
     }
+
     #ellipse2 {
         display: block;
     }
@@ -531,7 +538,7 @@ input ::-moz-placeholder {
         margin-top: -2px;
         margin-left: 10px;
     }
-    
+
     .card_front>div>p {
         font-size: 17px;
         letter-spacing: 0.13rem;
@@ -543,9 +550,9 @@ input ::-moz-placeholder {
         grid-column-gap: 100px;
         margin-bottom: 20px;
     }
-    
+
     .card_front>div>div>p:first-child {
-      width: 100%;
+        width: 100%;
     }
 
     .card_back {
@@ -590,7 +597,10 @@ input ::-moz-placeholder {
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .right_side2>div>svg {
-    margin-left: 100px;
-  }
+        margin-left: 100px;
+    }
 }
+
+/* end of mobile desktop site mode */
