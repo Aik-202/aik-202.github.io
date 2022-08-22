@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](http://aik-interactive-card-details.surge.sh/)
+- Solution URL: [Add solution URL here](https://frontendmentor.io/solutions/css-grid-vanilla-javascript-local-storage-fGh0BpGaCl.com)
+- Live Site URL: [Add live site URL here](https://aik-202.github.io/)
 
 ## My process
 
