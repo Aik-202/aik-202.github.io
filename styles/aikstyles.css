@@ -21,7 +21,7 @@ body {
     margin-bottom: 0;
 }
 
-.container>img {
+.container>figure>img {
     height: inherit;
     pointer-events: none;
     margin-bottom: 0;
@@ -41,7 +41,7 @@ body {
     margin-bottom: 0;
 }
 
-.form {
+.forms {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -140,11 +140,11 @@ input ::-moz-placeholder {
     color: hsl(279, 6%, 55%);
 }
 
-.form>a {
+.forms>a {
     max-width: 99%;
 }
 
-.form>a>button {
+.forms>a>button {
     font-family: 'Space Grotesk', sans-serif;
     background-color: hsl(278, 68%, 11%);
     border: 1px solid hsl(278, 68%, 11%);
@@ -285,7 +285,7 @@ input ::-moz-placeholder {
     margin-bottom: 0;
 }
 
-.container2>img {
+.container2>figure>img {
     height: inherit;
     pointer-events: none;
     margin-bottom: 0;
@@ -363,7 +363,7 @@ input ::-moz-placeholder {
         grid-column-gap: 350px;
     }
 
-    .container>img {
+    .container>figure>img {
         width: 150%;
         height: 100%;
     }
@@ -375,7 +375,7 @@ input ::-moz-placeholder {
         max-height: 16%;
     }
 
-    .form {
+    .forms {
         max-width: 80%;
         margin-top: -50px;
     }
@@ -414,7 +414,7 @@ input ::-moz-placeholder {
         margin-top: 10px;
     }
 
-    .container2>img {
+    .container2>figure>img {
         width: 73%;
         height: 100%;
     }
@@ -439,7 +439,7 @@ input ::-moz-placeholder {
         grid-column-gap: 0;
     }
 
-    .container>img {
+    .container>figure>img {
         width: 100%;
         height: 32%;
     }
@@ -453,7 +453,7 @@ input ::-moz-placeholder {
         height: auto;
     }
 
-    .form {
+    .forms {
         justify-content: start;
         align-content: start;
         max-width: 90%;
@@ -469,11 +469,11 @@ input ::-moz-placeholder {
         font-size: 13px;
     }
 
-    .form>a {
+    .forms>a {
         max-width: 150%;
     }
 
-    .form>a>button {
+    .forms>a>button {
         width: 104%;
         font-size: 15px;
     }
@@ -589,7 +589,7 @@ input ::-moz-placeholder {
         grid-column-gap: 0;
     }
 
-    .container2>img {
+    .container2>figure>img {
         width: 100%;
         height: 32%;
     }
