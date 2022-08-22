@@ -473,12 +473,8 @@ input ::-moz-placeholder {
         font-size: 13px;
     }
 
-    .forms>a {
-        max-width: 150%;
-    }
-
-    .forms>a>button {
-        width: 104%;
+    .forms>button {
+        width: 100%;
         font-size: 15px;
     }
 
