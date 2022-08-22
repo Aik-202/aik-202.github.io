@@ -228,7 +228,7 @@ input ::-moz-placeholder {
     display: none;
 }
 
-.card_front>div>p {
+.card_front>div>h1 {
     font-size: 22px;
     font-weight: 200;
     letter-spacing: 0.3rem;
@@ -394,7 +394,7 @@ input ::-moz-placeholder {
         margin-bottom: 10px;
     }
 
-    .card_front>div>p {
+    .card_front>div>h1 {
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 0.4rem;
@@ -546,7 +546,7 @@ input ::-moz-placeholder {
         margin-left: 5px;
     }
 
-    .card_front>div>p {
+    .card_front>div>h1 {
         font-size: 17px;
         letter-spacing: 0.13rem;
         font-weight: 600;
