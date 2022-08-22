@@ -188,5 +188,5 @@ I really love to continue learning about JavaScript regular expressions and abou
 
 ## Author
 - Github - [@Aik-202](https://github.com/Aik-202/interactive-card-detail-form.git)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Aik-202](https://www.frontendmentor.io/profile/Aik-202)
+- Twitter - [@chiomaikogwe](https://www.twitter.com/chiomaikogwe)
