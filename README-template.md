@@ -63,7 +63,7 @@ Users should be able to:
             <label for="exp_date">Exp. Date (MM/YY)</label>
             <div>
               <div class="input_div2">
-                <input type="text" placeholder="MM" id="exp_date" maxlength="2" onfocusout="check2()">
+                <input type="text" placeholder="MM" id="exp_date" maxlength="2" onmouseout="check2()">
                 <p id="error_message"></p>
               </div>
               <div class="input_div2">

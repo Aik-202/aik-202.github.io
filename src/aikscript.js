@@ -110,7 +110,8 @@ const check1 = () => {
 const check2 = () => {
     if (inputFields[2].value.length === 1) {
         inputFields[2].value = `0${inputFields[2].value}`; //adds 0 to front of number if theres only one number
-        month = inputFields[2].value
+        month = inputFields[2].value;
+        localStorage.setItem('userData', JSON.stringify(userInfo)); //store input field values in local storage object
     }
 }
 
