@@ -150,10 +150,11 @@ const submit = () => {
                 inputFields[i].placeholder = "MM"
             } else if (i == 3) {
                 inputFields[i].placeholder = "YY"
-            } else if (i == 4) {
+            } else if (i == 4) { 
                 inputFields[i].placeholder = "e.g. 123"
             }
         }
-        button.setAttribute("href", "completed.html"); //navigate to completed page
+        window.location.href= "completed.html"
+        // button.childNodes.setAttribute("href", "completed.html"); //navigate to completed page
     }
 }

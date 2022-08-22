@@ -21,10 +21,15 @@ body {
     margin-bottom: 0;
 }
 
+.container>figure {
+    margin: 0;
+}
+
 .container>figure>img {
     height: inherit;
     pointer-events: none;
     margin-bottom: 0;
+    margin: 0;
 }
 
 .right_side {
@@ -140,19 +145,14 @@ input ::-moz-placeholder {
     color: hsl(279, 6%, 55%);
 }
 
-.forms>a {
-    max-width: 99%;
-}
-
-.forms>a>button {
+.forms>button {
     font-family: 'Space Grotesk', sans-serif;
     background-color: hsl(278, 68%, 11%);
     border: 1px solid hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     padding: 10px;
     border-radius: 5px;
-    width: 100%;
-    max-width: inherit;
+    max-width: 100%;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -270,7 +270,7 @@ input ::-moz-placeholder {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 15px;
     text-align: center;
-    margin-top: -15px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
@@ -283,6 +283,10 @@ input ::-moz-placeholder {
     grid-template-columns: auto auto;
     height: 92%;
     margin-bottom: 0;
+}
+
+.container2>figure {
+    margin: 0;
 }
 
 .container2>figure>img {
