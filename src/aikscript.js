@@ -35,7 +35,6 @@ for (let i = 0; i < inputFields.length; i++) {
                 inputFields[i].style.textTransform = "capitalize";
                 userInfo.cardName = inputFields[i].value; //stores value for local storage
                 if (/\d/.test(inputFields[i].value)) { //card name value must be letters only 
-                    console.log(/\d/.test(inputFields[i].value))
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";
@@ -117,20 +116,28 @@ const check2 = () => {
 
 // form validation on click confirm
 const submit = () => {
-    const test = [false, false, false, false]; //test for blank input fields
+    const test1 = [false, false, false, false]; //test for blank input fields
+    const test2 = [false, false, false, false];//test for error in input fields
     for (let i = 0; i < inputFields.length; i++) {
         if (!inputFields[i].value) {
             inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
             inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
             errorMessage[i].style.display = "block";
             errorMessage[i].innerHTML = "Can't be blank";
-            test[i] = true; // if blank test for that input field is true
+            test1[i] = true; // if blank test for that input field is true
         } else {
-            test[i] = false;
+            test1[i] = false;
+        }
+    }
+    for (let i = 0; i < inputFields.length; i++) {
+        if (errorMessage[i].style.display === "block") {
+            test2[i] = true;  // if there is an error
+        } else {
+            test2[i] = false;
         }
     }
     // if there is no blank input field
-    if (!test.includes(true)) {
+    if (!test1.includes(true) && !test2.includes(true)) {
         //clear form
         for (let i = 0; i < inputFields.length; i++) {
             inputFields[i].value = "";

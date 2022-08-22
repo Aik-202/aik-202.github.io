@@ -121,7 +121,6 @@ for (let i = 0; i < inputFields.length; i++) {
                 inputFields[i].style.textTransform = "capitalize";
                 userInfo.cardName = inputFields[i].value;
                 if (/\d/.test(inputFields[i].value)) {
-                    console.log(/\d/.test(inputFields[i].value))
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";
