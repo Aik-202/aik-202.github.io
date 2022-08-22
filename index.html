@@ -14,31 +14,32 @@
 <body>
   <h1 style="display: none;">MAIN</h1>
   <section class="container" id="container" role="main">
+    <h2 style="display: none;">Section</h2>
     <figure>
       <img src="./images/bg-main-desktop.png" alt="bg-main-desktop">
     </figure>
     <div class="right_side">
       <div class="forms" role="group">
         <label for="cardholder_name">Cardholder Name</label>
-        <div class="input_div1 inp" role="form">
+        <div class="input_div1 inp" role="form-input-1">
           <input type="text" placeholder="e.g. Jane Appleseed" id="cardholder_name">
           <p class="error_message"></p>
         </div>
         <label for="card_number">Card Number</label>
-        <div class="input_div1" role="form">
+        <div class="input_div1" role="form-input-2">
           <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card_number" maxlength="19"
             onmouseout="check1()">
           <p class="error_message"></p>
         </div>
         <div class="grouped" role="group">
-          <div class="exp_dates" role="form">
+          <div class="exp_dates" role="form-label-3">
             <label for="exp_date">Exp. Date (MM/YY)</label>
             <div>
-              <div class="input_div2" role="form">
+              <div class="input_div2" role="form-input-3">
                 <input type="text" placeholder="MM" id="exp_date" maxlength="2" onmouseout="check2()">
                 <p class="error_message"></p>
               </div>
-              <div class="input_div2" role="form">
+              <div class="input_div2" role="form-input-4">
                 <input type="text" placeholder="YY" id="exp_date_yy" maxlength="2">
                 <p class="error_message"></p>
               </div>
@@ -46,7 +47,7 @@
           </div>
           <div class="cvc">
             <label for="cvc"> CVC</label>
-            <div class="input_div3" role="form">
+            <div class="input_div3" role="form-input-5">
               <input type="text" placeholder="e.g. 123" maxlength="3" id="cvc">
               <p class="error_message"></p>
             </div>
