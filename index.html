@@ -12,51 +12,51 @@
 </head>
 
 <body>
-  <section class="container" id="container">
-    <img src="./images/bg-main-desktop.png" alt="bg-main-desktop">
+  <section class="container" id="container" role="main">
+    <img src="./images/bg-main-desktop.png" alt="bg-main-desktop" role="figure">
     <div class="right_side">
-      <div class="form">
+      <div class="form" role="form">
         <label for="cardholder_name">Cardholder Name</label>
-        <div class="input_div1 inp">
+        <div class="input_div1 inp" role="form">
           <input type="text" placeholder="e.g. Jane Appleseed" id="cardholder_name">
-          <p id="error_message"></p>
+          <p class="error_message"></p>
         </div>
         <label for="card_number">Card Number</label>
-        <div class="input_div1">
+        <div class="input_div1" role="form">
           <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card_number" maxlength="19"
             onmouseout="check1()">
-          <p id="error_message"></p>
+          <p class="error_message"></p>
         </div>
-        <div class="grouped">
-          <div class="exp_dates">
+        <div class="grouped" role="group">
+          <div class="exp_dates" role="form">
             <label for="exp_date">Exp. Date (MM/YY)</label>
             <div>
-              <div class="input_div2">
-                <input type="text" placeholder="MM" id="exp_date" maxlength="2" onmouseout="check2()">
-                <p id="error_message"></p>
+              <div class="input_div2" role="form">
+                <input type="text" placeholder="MM" id="exp_date_mm" maxlength="2" onmouseout="check2()">
+                <p class="error_message"></p>
               </div>
-              <div class="input_div2">
-                <input type="text" placeholder="YY" id="exp_date" maxlength="2">
-                <p id="error_message"></p>
+              <div class="input_div2" role="form">
+                <input type="text" placeholder="YY" id="exp_date_yy" maxlength="2">
+                <p class="error_message"></p>
               </div>
             </div>
           </div>
           <div class="cvc">
             <label for="cvc"> CVC</label>
-            <div class="input_div3">
+            <div class="input_div3" role="form">
               <input type="text" placeholder="e.g. 123" maxlength="3">
-              <p id="error_message"></p>
+              <p class="error_message"></p>
             </div>
           </div>
         </div>
         <a id="but" onclick="submit()"><button>Confirm</button></a>
       </div>
     </div>
-    <div class="on_top">
-      <div class="card_back">
+    <div class="on_top" role="group">
+      <div class="card_back" role="text">
         <p>000</p>
       </div>
-      <div class="card_front">
+      <div class="card_front" role="figure">
         <svg id="svg" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" id="ellipse1" />
           <ellipse cx="13.478" cy="13.5" rx="13.478" ry="13.5" fill="#fff" id="ellipse2" />
@@ -67,9 +67,9 @@
             d="M53.2 15.5c0 6.565-6.507 6.375-6.065 6.075-6.559 0-6.365-6.51-6.065-6.075 0-6.565 6.606-6.075 6.165-6.075 6.558 0 6.065 6.51 6.065 6.075Z"
             stroke="#fff" id="path2" />
         </svg>
-        <div>
+        <div role="text">
           <p>0000 0000 0000 0000</p>
-          <div>
+          <div role="text">
             <p>Jane Appleseed</p>
             <p>00/00</p>
           </div>
@@ -77,7 +77,7 @@
       </div>
     </div>
   </section>
-  <div class="attribution">
+  <div class="attribution" role="doc-credits">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/Aik-202/interactive-card-detail-form.git">Assurance Chioma Ikogwe</a>.
   </div>

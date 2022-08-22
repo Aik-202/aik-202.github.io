@@ -321,7 +321,7 @@ input ::-moz-placeholder {
     margin-left: 120px;
 }
 
-.right_side2>div>h2 {
+.right_side2>div>h1 {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
     color: hsl(278, 68%, 11%);

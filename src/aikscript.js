@@ -1,5 +1,5 @@
 const inputFields = document.getElementsByTagName("input");
-const errorMessage = document.querySelectorAll("#error_message");
+const errorMessage = document.querySelectorAll(".error_message");
 const button = document.getElementById("but");
 
 var cardName

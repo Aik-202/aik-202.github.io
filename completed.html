@@ -13,10 +13,10 @@
 </head>
 
 <body>
-  <section class="container2">
-    <img src="./images/bg-main-desktop.png" alt="bg-main-desktop">
-    <div class="right_side2">
-      <div>
+  <section class="container2" role="main">
+    <img src="./images/bg-main-desktop.png" alt="bg-main-desktop" role="figure">
+    <div class="right_side2" role="article">
+      <div role="figure">
         <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="40" cy="40" r="40" fill="url(#a)" />
           <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
@@ -27,16 +27,16 @@
             </linearGradient>
           </defs>
         </svg>
-        <h2>Thank you!</h2>
+        <h1>Thank you!</h1>
         <p> We've added your card details</p>
         <button>Continue</button>
       </div>
     </div>
-    <div class="on_top">
-      <div class="card_back">
+    <div class="on_top" role="group">
+      <div class="card_back" role="figure">
         <p id="cvc_num">000</p>
       </div>
-      <div class="card_front">
+      <div class="card_front" role="figure">
         <svg id="svg" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" id="ellipse1" />
           <ellipse cx="13.478" cy="13.5" rx="13.478" ry="13.5" fill="#fff" id="ellipse2" />
@@ -47,16 +47,16 @@
             d="M53.2 15.5c0 6.565-6.507 6.375-6.065 6.075-6.559 0-6.365-6.51-6.065-6.075 0-6.565 6.606-6.075 6.165-6.075 6.558 0 6.065 6.51 6.065 6.075Z"
             stroke="#fff" id="path2" />
         </svg>
-        <div>
+        <div role="text"> 
           <p id="card_num">0000 0000 0000 0000</p>
-          <div>
+          <div role="text">
             <p id="card_nam">Jane Appleseed</p>
             <p id="date">00/00</p>
           </div>
         </div>
       </div>
   </section>
-  <div class="attribution">
+  <div class="attribution" role="doc-credits">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/Aik-202/interactive-card-detail-form.git">Assurance Chioma Ikogwe</a>.
   </div>
