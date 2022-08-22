@@ -26,20 +26,20 @@
           <p class="error_message"></p>
         </div>
         <label for="card_number">Card Number</label>
-        <div class="input_div1" role="form">
+        <div class="input_div1" role="group">
           <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card_number" maxlength="19"
             onmouseout="check1()">
           <p class="error_message"></p>
         </div>
         <div class="grouped" role="group">
-          <div class="exp_dates" role="form">
+          <div class="exp_dates" role="group">
             <label for="exp_date">Exp. Date (MM/YY)</label>
             <div>
-              <div class="input_div2" role="form">
+              <div class="input_div2" role="group">
                 <input type="text" placeholder="MM" id="exp_date" maxlength="2" onmouseout="check2()">
                 <p class="error_message"></p>
               </div>
-              <div class="input_div2" role="form">
+              <div class="input_div2" role="group">
                 <input type="text" placeholder="YY" id="exp_date_yy" maxlength="2">
                 <p class="error_message"></p>
               </div>
@@ -47,7 +47,7 @@
           </div>
           <div class="cvc">
             <label for="cvc"> CVC</label>
-            <div class="input_div3" role="form">
+            <div class="input_div3" role="group">
               <input type="text" placeholder="e.g. 123" maxlength="3" id="cvc">
               <p class="error_message"></p>
             </div>
