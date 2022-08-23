@@ -26,6 +26,7 @@ body {
 }
 
 .container>figure>img {
+    width: 98%;
     height: inherit;
     pointer-events: none;
     margin-bottom: 0;
@@ -53,7 +54,7 @@ body {
     grid-gap: 10px 50px;
     max-width: 65%;
     padding: 10px;
-    margin-top: -160px;
+    margin-top: -70px;
 }
 
 label {
@@ -192,7 +193,7 @@ input ::-moz-placeholder {
 .on_top {
     display: grid;
     grid-template-rows: auto auto;
-    grid-row-gap: 30px;
+    grid-row-gap: 35px;
     left: 12%;
     top: 20%;
     width: fit-content;
@@ -435,6 +436,9 @@ input ::-moz-placeholder {
 
 /* end of mobile desktop site mode */
 
+/* for 700px breakpoint*/
+/* @media only screen and (max-width: 700px) { */
+
 /* for mobile normal screen */
 @media only screen and (max-width: 400px) {
     .container {
@@ -474,7 +478,7 @@ input ::-moz-placeholder {
     }
 
     .forms>button {
-        width: 120%;
+        width: 140%;
         font-size: 15px;
     }
 
@@ -609,4 +613,4 @@ input ::-moz-placeholder {
     }
 }
 
-/* end of mobile desktop site mode */
+/* end of mobile normal screen */
