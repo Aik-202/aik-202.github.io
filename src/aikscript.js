@@ -34,7 +34,7 @@ for (let i = 0; i < inputFields.length; i++) {
             if (i === 0) {
                 inputFields[i].style.textTransform = "capitalize";
                 userInfo.cardName = inputFields[i].value; //stores value for local storage
-                if (/\d/.test(inputFields[i].value)) { //card name value must be letters only 
+                if (/\d/.test(inputFields[i].value)|| /[`!@#$%^&*()_+\-=\[\]{};'"\\|,.<>\/?~]/.test(inputFields[i].value) ) { //card name value must be letters only 
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";
