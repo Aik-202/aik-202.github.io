@@ -43,7 +43,7 @@ for (let i = 0; i < inputFields.length; i++) {
             }
             if (i === 1 || i === 2 || i === 3 || i === 4) {
                 //card number, cvc, expiry dates value must be numbers only, no special characters
-                if (/[a-zA-z]/.test(inputFields[i].value) || /[`!@#$%^&*()_+\-=\[\]{};'"\\|,.<>\/?~]/.test(inputFields[i].value)) {
+                if (/[a-zA-z]/.test(inputFields[i].value) || /[`!@#$%^&*()_+\-=\[\]{};':•°£¢€¥©®™✓¶∆"\\|,.<>\/?~]/.test(inputFields[i].value)) {
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";

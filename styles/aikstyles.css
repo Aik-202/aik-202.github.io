@@ -358,6 +358,12 @@ input ::-moz-placeholder {
     margin-top: 20px;
     cursor: pointer;
 }
+  #card_num {
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+}
 
 /* end of desktop mode */
 
@@ -374,14 +380,15 @@ input ::-moz-placeholder {
 
     .on_top {
         left: 15%;
-        top: 6%;
+        top: 26%;
         padding-right: 80px;
         max-height: 16%;
     }
 
     .forms {
         max-width: 80%;
-        margin-top: -50px;
+        margin-top: -220px;
+        margin-bottom: 300px;
     }
 
     .input_div2>p {
@@ -389,7 +396,7 @@ input ::-moz-placeholder {
     }
 
     .card_front {
-        max-width: 90%;
+        max-width: 95%;
         max-height: 85%;
         margin-bottom: 10px;
     }
@@ -405,8 +412,8 @@ input ::-moz-placeholder {
     }
 
     .card_back {
-        max-width: 100%;
-        max-height: 290%;
+        max-width: 120%;
+        max-height: 250%;
         margin-top: -10px;
     }
 
@@ -417,18 +424,24 @@ input ::-moz-placeholder {
     .attribution {
         margin-top: 10px;
     }
-
     .container2>figure>img {
-        width: 73%;
-        height: 100%;
+        width: 56%;
+        height: 100vh;
     }
 
     .right_side2 {
-        margin-left: 10px;
+        margin-left: -20%;
     }
 
     .right_side2>div {
-        margin-top: -5px;
+        margin-top: -250px;
+        margin-bottom: 250px;
+    }
+    
+    #card_num {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.25rem;
     }
     
 }
@@ -477,8 +490,10 @@ input ::-moz-placeholder {
     }
 
     .forms>button {
-        width: 120%;
+        width: 104%;
         font-size: 15px;
+        max-width: 104%;
+        
     }
 
     .exp_dates>div {
@@ -541,13 +556,13 @@ input ::-moz-placeholder {
         max-width: 72%;
         max-height: 85%;
         grid-row: 2/2;
-        margin-top: -15px;
+        margin-top: -20px;
         margin-left: 5px;
     }
 
     .card_front>div>h1 {
         font-size: 17px;
-        letter-spacing: 0.13rem;
+        letter-spacing: 0.19rem;
         font-weight: 600;
     }
 
@@ -601,14 +616,26 @@ input ::-moz-placeholder {
         margin-top: -280px;
         margin-left: -20px;
     }
+    
+    .right_side2>div {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
     .right_side2>div>p {
+       margin-top: -5px; 
         padding-left: 50px;
         padding-right: 50px;
     }
 
     .right_side2>div>svg {
-        margin-left: 115px;
+        margin-left: 110px;
+    }
+    
+    #card_num {
+      font-size: 17px;
+      letter-spacing: 0.16rem;
+      font-weight: 600;
     }
 }
 
