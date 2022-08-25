@@ -398,8 +398,8 @@ input ::-moz-placeholder {
 
     .forms {
         max-width: 80%;
-        margin-top: -100px;
-        margin-bottom: 100px;
+        margin-top: -220px;
+        margin-bottom: 300px;
     }
 
     .input_div2>p {
@@ -454,22 +454,6 @@ input ::-moz-placeholder {
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.25rem;
-    }
-
-    #ellipse1 {
-        display: none;
-    }
-
-    #ellipse2 {
-        display: block;
-    }
-
-    #path1 {
-        display: none;
-    }
-
-    #path2 {
-        display: block;
     }
 
 }
