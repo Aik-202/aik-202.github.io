@@ -444,8 +444,8 @@ input ::-moz-placeholder {
     }
 
     .right_side2>div {
-        margin-top: -250px;
-        margin-bottom: 250px;
+        margin-top: -150px;
+        margin-bottom: 150px;
     }
 
     #card_num {
@@ -572,8 +572,8 @@ input ::-moz-placeholder {
 
 /* end of 820px breakpoint*/
 
-/* for 540px breakpoint*/
-@media only screen and (max-width: 540px) {
+/* for 700px breakpoint*/
+@media only screen and (max-width: 700px) {
     .container {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
@@ -582,7 +582,7 @@ input ::-moz-placeholder {
 
     .container>figure>img {
         width: 100%;
-        height: 32%;
+        height: 31%;
     }
 
     .right_side {
@@ -684,7 +684,7 @@ input ::-moz-placeholder {
 
     .card_front>div>h1 {
         font-size: 17px;
-        letter-spacing: 0.6rem;
+        letter-spacing: 0.5rem;
         font-weight: 600;
     }
 
@@ -777,7 +777,7 @@ input ::-moz-placeholder {
     }
 }
 
-/* end of 540px breakpoint*/
+/* end of 700px breakpoint*/
 
 /* for 480px breakpoint*/
 @media only screen and (max-width: 480px) {
