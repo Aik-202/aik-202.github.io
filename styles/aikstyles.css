@@ -398,8 +398,8 @@ input ::-moz-placeholder {
 
     .forms {
         max-width: 80%;
-        margin-top: -220px;
-        margin-bottom: 300px;
+        margin-top: -100px;
+        margin-bottom: 100px;
     }
 
     .input_div2>p {
@@ -456,12 +456,28 @@ input ::-moz-placeholder {
         letter-spacing: 0.25rem;
     }
 
+    #ellipse1 {
+        display: none;
+    }
+
+    #ellipse2 {
+        display: block;
+    }
+
+    #path1 {
+        display: none;
+    }
+
+    #path2 {
+        display: block;
+    }
+
 }
 
 /* end of mobile desktop site mode */
 
 /* for 1029px breakpoint*/
-@media only screen and (max-width: 1029px) {
+@media only screen and (max-width: 1028px) {
     .forms {
         margin-top: -40px;
         margin-bottom: 20px;
