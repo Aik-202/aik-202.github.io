@@ -155,6 +155,5 @@ const submit = () => {
             }
         }
         window.location.href= "completed.html"
-        // button.childNodes.setAttribute("href", "completed.html"); //navigate to completed page
     }
 }

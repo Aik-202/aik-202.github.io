@@ -11,3 +11,7 @@ name2.innerHTML = userData.cardName;
 num.innerHTML = userData.cardNumber;
 date2.innerHTML = userData.date;
 cvc2.innerHTML = userData.cvc;
+
+if(!userData){
+    window.location.href= "index.html"
+}
