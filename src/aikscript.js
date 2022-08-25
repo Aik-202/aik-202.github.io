@@ -5,14 +5,15 @@ const button = document.getElementById("but");
 var cardName
 var cardNumber
 var month
-var date
+var year
 var cvc
 
 //local storage object for users data
 const userInfo = {
     cardName,
     cardNumber,
-    date,
+    month,
+    year,
     cvc
 }
 
@@ -34,7 +35,7 @@ for (let i = 0; i < inputFields.length; i++) {
             if (i === 0) {
                 inputFields[i].style.textTransform = "capitalize";
                 userInfo.cardName = inputFields[i].value; //stores value for local storage
-                if (/\d/.test(inputFields[i].value)|| /[`!@#$%^&*()_+\-=\[\]{};'"\\|,.<>\/?~]/.test(inputFields[i].value) ) { //card name value must be letters only 
+                if (/\d/.test(inputFields[i].value) || /[`!@#$%^&*()_+\-=\[\]{};'"\\|,.<>\/?~]/.test(inputFields[i].value)) { //card name value must be letters only 
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";
@@ -57,7 +58,7 @@ for (let i = 0; i < inputFields.length; i++) {
                         inputFields[i].value = inputFields[i].value + " ";
                     }
                 } else if (i === 2) {
-                    month = inputFields[i].value //stores value for local storage
+                    userInfo.month = inputFields[i].value //stores value for local storage
                     //for month field, must not be 0 or greater than 12
                     if (inputFields[i].value > 12 || inputFields[i].value < 1) {
                         inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
@@ -65,12 +66,10 @@ for (let i = 0; i < inputFields.length; i++) {
                         errorMessage[i].style.display = "block";
                         errorMessage[i].innerHTML = "Incorrect Month";
                         button.style.marginTop = "22px";
-                    }
-
+                    }    
                 } else if (i === 3) {
                     //stores value for local storage
-                    const year = inputFields[i].value;
-                    userInfo.date = `${month}/${year}`;
+                    userInfo.year = inputFields[i].value;
                     //for year field, must be 2 numbers
                     if (inputFields[i].value.length < 2) {
                         inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
@@ -96,7 +95,7 @@ for (let i = 0; i < inputFields.length; i++) {
     });
 }
 
-//on focus out, for card number field, must be 19 numbers
+//on mouse out, for card number field, must be 19 numbers
 const check1 = () => {
     if (inputFields[1].value.length < 19) {
         inputFields[1].style.border = "1px solid  hsl(0, 100%, 66%)";
@@ -104,21 +103,27 @@ const check1 = () => {
         errorMessage[1].style.display = "block";
         errorMessage[1].innerHTML = "Incorrect Card Number";
     }
+    if (findNumberOfDigits(inputFields[1].value) !== 16) {
+        inputFields[1].style.border = "1px solid  hsl(0, 100%, 66%)";
+        inputFields[1].style.outline = "1px solid  hsl(0, 100%, 66%)";
+        errorMessage[1].style.display = "block";
+        errorMessage[1].innerHTML = "Incorrect Card Number";
+    }
 }
 
-//on focus out, for month field 
+//on mouse out, for month field 
 const check2 = () => {
     if (inputFields[2].value.length === 1) {
         inputFields[2].value = `0${inputFields[2].value}`; //adds 0 to front of number if theres only one number
-        month = inputFields[2].value;
+        userInfo.month = inputFields[2].value;
         localStorage.setItem('userData', JSON.stringify(userInfo)); //store input field values in local storage object
-    }
+    } 
 }
 
 // form validation on click confirm
 const submit = () => {
     const test1 = [false, false, false, false]; //test for blank input fields
-    const test2 = [false, false, false, false];//test for error in input fields
+    const test2 = [false, false, false, false]; //test for error in input fields
     for (let i = 0; i < inputFields.length; i++) {
         if (!inputFields[i].value) {
             inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
@@ -132,7 +137,7 @@ const submit = () => {
     }
     for (let i = 0; i < inputFields.length; i++) {
         if (errorMessage[i].style.display === "block") {
-            test2[i] = true;  // if there is an error
+            test2[i] = true; // if there is an error
         } else {
             test2[i] = false;
         }
@@ -150,10 +155,21 @@ const submit = () => {
                 inputFields[i].placeholder = "MM"
             } else if (i == 3) {
                 inputFields[i].placeholder = "YY"
-            } else if (i == 4) { 
+            } else if (i == 4) {
                 inputFields[i].placeholder = "e.g. 123"
             }
         }
-        window.location.href= "completed.html"
+        window.location.href = "completed.html"
     }
 }
+
+function findNumberOfDigits(str){
+    let count = 0;
+    for(let char of str){
+        if(char >= "0" && char <= "9"){
+            count++
+        }
+    }
+    return count;
+}
+

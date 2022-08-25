@@ -451,7 +451,15 @@ input ::-moz-placeholder {
     #card_num {
         font-size: 16px;
         font-weight: 600;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .card2>div>div {
+        grid-column-gap: 80px;
+    }
+    
+    .card3>p{
+        margin-left: 260%;
     }
 
 }

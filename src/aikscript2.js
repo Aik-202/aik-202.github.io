@@ -9,7 +9,7 @@ let userData = JSON.parse(localStorage.getItem("userData"));
 //assigning data collected from index page
 name2.innerHTML = userData.cardName;
 num.innerHTML = userData.cardNumber;
-date2.innerHTML = userData.date;
+date2.innerHTML = `${userData.month}/${userData.year}`;
 cvc2.innerHTML = userData.cvc;
 
 if(!userData){
