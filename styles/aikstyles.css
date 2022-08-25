@@ -397,7 +397,7 @@ input ::-moz-placeholder {
     .forms {
         max-width: 80%;
         margin-top: -220px;
-        margin-bottom: 300px;
+        margin-bottom: 350px;
     }
 
     .input_div2>p {
@@ -440,7 +440,7 @@ input ::-moz-placeholder {
     }
 
     .right_side2 {
-        margin-left: -20%;
+        margin-left: -2%;
     }
 
     .right_side2>div {

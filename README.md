@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontendmentor.io/solutions/css-grid-vanilla-javascript-local-storage-fGh0BpGaCl.com)
+- Solution URL: [Add solution URL here](https://frontendmentor.io/profile/Aik-202/solutions)
 - Live Site URL: [Add live site URL here](https://aik-202.github.io/)
 
 ## My process
@@ -103,6 +103,7 @@ Users should be able to:
 }
 ```
 ```js
+// tests for input field
 for (let i = 0; i < inputFields.length; i++) {
     inputFields[i].addEventListener("input", () => {
         inputFields[i].style.border = "1px solid hsl(278, 94%, 30%)";
@@ -110,7 +111,7 @@ for (let i = 0; i < inputFields.length; i++) {
         inputFields[i].style.textTransform = "none";
         errorMessage[i].style.display = "none";
         button.style.marginTop = "15px";
-        if (!inputFields[i].value) {
+        if (!inputFields[i].value) { // input field must not be blank 
             inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
             inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
             errorMessage[i].style.display = "block";
@@ -119,16 +120,17 @@ for (let i = 0; i < inputFields.length; i++) {
         } else if (inputFields[i].value) {
             if (i === 0) {
                 inputFields[i].style.textTransform = "capitalize";
-                userInfo.cardName = inputFields[i].value;
-                if (/\d/.test(inputFields[i].value)) {
+                userInfo.cardName = inputFields[i].value; //stores value for local storage
+                if (/\d/.test(inputFields[i].value)|| /[`!@#$%^&*()_+\-=\[\]{};'"\\|,.<>\/?~]/.test(inputFields[i].value) ) { //card name value must be letters only 
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";
-                    errorMessage[i].innerHTML = "Wrong format, letters only";   
-                } 
+                    errorMessage[i].innerHTML = "Wrong format, letters only";
+                }
             }
             if (i === 1 || i === 2 || i === 3 || i === 4) {
-                if (/[a-zA-z]/.test(inputFields[i].value) || /[`!@#$%^&*()_+\-=\[\]{};'"\\|,.<>\/?~]/.test(inputFields[i].value)) {
+                //card number, cvc, expiry dates value must be numbers only, no special characters
+                if (/[a-zA-z]/.test(inputFields[i].value) || /[`!@#$%^&*()_+\-=\[\]{};':•°£¢€¥©®™✓¶∆"\\|,.<>\/?~]/.test(inputFields[i].value)) {
                     inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                     inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                     errorMessage[i].style.display = "block";
@@ -136,43 +138,48 @@ for (let i = 0; i < inputFields.length; i++) {
                     button.style.marginTop = "22px";
                 }
                 if (i === 1) {
-                    userInfo.cardNumber = inputFields[i].value;
+                    userInfo.cardNumber = inputFields[i].value; //stores value for local storage
+                    // for card number, after 4 digits, give space automatically
                     if (inputFields[i].value.length === 4 || inputFields[i].value.length === 9 || inputFields[i].value.length === 14) {
-                        inputFields[i].value = inputFields[i].value + " ";   
-                    } 
+                        inputFields[i].value = inputFields[i].value + " ";
+                    }
                 } else if (i === 2) {
-                    month = inputFields[i].value
+                    month = inputFields[i].value //stores value for local storage
+                    //for month field, must not be 0 or greater than 12
                     if (inputFields[i].value > 12 || inputFields[i].value < 1) {
                         inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                         inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                         errorMessage[i].style.display = "block";
                         errorMessage[i].innerHTML = "Incorrect Month";
                         button.style.marginTop = "22px";
-                    } 
-                        
+                    }
+
                 } else if (i === 3) {
+                    //stores value for local storage
                     const year = inputFields[i].value;
                     userInfo.date = `${month}/${year}`;
+                    //for year field, must be 2 numbers
                     if (inputFields[i].value.length < 2) {
                         inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                         inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                         errorMessage[i].style.display = "block";
                         errorMessage[i].innerHTML = "Incorrect Year";
                         button.style.marginTop = "22px";
-                    } 
+                    }
                 } else if (i === 4) {
-                    userInfo.cvc= inputFields[i].value;
+                    userInfo.cvc = inputFields[i].value; //stores value for local storage
+                    //for cvc field, must be 3 numbers
                     if (inputFields[i].value.length < 3) {
                         inputFields[i].style.border = "1px solid  hsl(0, 100%, 66%)";
                         inputFields[i].style.outline = "1px solid  hsl(0, 100%, 66%)";
                         errorMessage[i].style.display = "block";
                         errorMessage[i].innerHTML = "Incorrect CVC";
                         button.style.marginTop = "22px";
-                    } 
+                    }
                 }
             }
         }
-        localStorage.setItem('userData', JSON.stringify(userInfo));
+        localStorage.setItem('userData', JSON.stringify(userInfo)); //store input field values in local storage object
     });
 }
 ```
