@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontendmentor.io/profile/Aik-202/solutions)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/css-grid-vanilla-javascript-javascript-local-storage-fGh0BpGaCl)
 - Live Site URL: [Add live site URL here](https://aik-202.github.io/aik-interactive-card-details-form/)
 
 
