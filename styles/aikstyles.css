@@ -396,8 +396,8 @@ input ::-moz-placeholder {
 
     .forms {
         max-width: 80%;
-        margin-top: -220px;
-        margin-bottom: 350px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .input_div2>p {
@@ -444,8 +444,8 @@ input ::-moz-placeholder {
     }
 
     .right_side2>div {
-        margin-top: -250px;
-        margin-bottom: 250px;
+        margin-top: -20px;
+        margin-bottom: 50px;
     }
 
     #card_num {
