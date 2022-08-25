@@ -1112,7 +1112,7 @@ input ::-moz-placeholder {
 
     .card_front>div>div {
         font-size: 7px;
-        grid-column-gap: 100px;
+        grid-column-gap: 120px;
         margin-bottom: 25px;
     }
 
