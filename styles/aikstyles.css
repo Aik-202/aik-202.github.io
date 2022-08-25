@@ -26,7 +26,6 @@ body {
 }
 
 .container>figure>img {
-    width: 103%;
     height: inherit;
     pointer-events: none;
     margin-bottom: 0;
@@ -54,7 +53,7 @@ body {
     grid-gap: 10px 50px;
     max-width: 65%;
     padding: 10px;
-    margin-top: -50px;
+    margin-top: -160px;
 }
 
 label {
@@ -291,7 +290,6 @@ input ::-moz-placeholder {
 }
 
 .container2>figure>img {
-    width: 55%;
     height: inherit;
     pointer-events: none;
     margin-bottom: 0;
@@ -320,7 +318,7 @@ input ::-moz-placeholder {
     justify-content: center;
     width: 100%;
     padding: 10px;
-    margin-top: -10px;
+    margin-top: -200px;
 }
 
 .right_side2>div>svg {
